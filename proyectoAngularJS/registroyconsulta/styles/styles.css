@@ -1,0 +1,9 @@
+.container{
+	border: 1px solid #CCC;	
+	padding-top: 15px;
+	width: 400px;
+}
+
+.no-top{
+	border-top: none;
+}

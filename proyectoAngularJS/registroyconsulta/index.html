@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>REST Angular Example</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body ng-controller="myController">
+
+	<!-- Formulario -->
+	<div class="container">
+
+		<form id="myForm" name="myForm">
+			<div class="form-group">
+				<label class="sr-only" for="name">Nombre</label>
+				<input class="form-control" type="text" id="name" name="name" placeholder="Nombre" ng-model="user.name" required>
+			</div>
+			<div class="form-group">
+				<label class="sr-only" for="age">Edad</label>
+				<input class="form-control" type="number" min="1" max="150" id="age" name="age" placeholder="Edad" ng-model="user.age" required>
+			</div>
+			<div class="form-group">
+				<input class="btn btn-primary" type="submit" value="Añadir" ng-class="{'disabled': myForm.$invalid}" ng-click="addUser(user)">
+			</div>
+		</form>
+
+	</div>
+
+	<!-- Tabla -->
+	<div class="container no-top">
+
+		<table class="table table-striped">
+		 	<thead>
+		 		<tr>
+		 			<th width="45%">Nombre</th>
+		 			<th width="45%">Edad</th>
+		 			<th width="10%"></th>
+		 		</tr>
+		 	</thead>
+		 	<tbody>
+		 		<tr class="form-inline" ng-repeat="user in users">
+		 			<td>
+		 				<span ng-hide="edit[user.id]" ng-dblclick="showEdition($event, user.id)">{{user.name}}</span>
+		 				<input type="text" class="form-control" ng-model="user.name" ng-show="edit[user.id]" value="{{user.name}}">
+		 			</td>
+		 			<td>
+		 				<span ng-hide="edit[user.id]" ng-dblclick="showEdition($event, user.id)">{{user.age}}</span>
+		 				<input type="number" class="form-control" ng-model="user.age" ng-show="edit[user.id]" min="1" max="150" value="{{user.age}}">
+		 			</td>
+		 			<td>
+		 				<button type="button" class="btn btn-primary" ng-hide="edit[user.id]" ng-click="deleteUser(user)">Eliminar</button>
+		 				<button type="button" class="btn btn-warning" ng-show="edit[user.id]" ng-click="editUser(user)">Editar</button>
+		 			</td>
+		 		</tr>
+		 	</tbody>
+		</table>
+
+	</div>
+
+	<script src="js/angular/angular.min.js"></script>
+	<script src="js/angular/angular-resource.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/services.js"></script>
+	<script src="js/controllers.js"></script>
+</body>
+</html>

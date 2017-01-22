@@ -1,0 +1,25 @@
+{
+	"integrantes": [
+
+
+	{
+		"ID": "table_1",
+		"Docente": "AArmas",
+		"Imagen": "prueba.png"
+
+	},
+
+
+	{
+		"ID": "table_1",
+		"Docente": "Luis Americo Auyadermont",
+		"Imagen": "prueba2.png"
+
+	}
+
+
+
+
+
+	]
+}
