@@ -1,0 +1,398 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Taller de Python 2016</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/night.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+
+				<section data-transition="convex">
+					<img src="python.gif" alt="" />
+					<h1>¡Python en todo!</h1>
+					<h3>Primer Taller de autoformación </h3>
+					<h4>¡Aprendamos de manera colectiva!</h4>
+					<p>
+						<small> Facilitador <a href="http://hakim.se">Luis Américo Auyadermont M</a> / <a href="http://twitter.com/hakimel">@lauyader</a></small>
+					</p>
+				</section>
+
+				<section data-transition="convex">
+								<section>
+								<h2>Objetivo del Taller</h2>
+								<p>Fomentar  colectivos de desarrollo en Python a nivel del Estado Carabobo. </p>
+								<p>?</p>
+								</section>
+								<section>
+								<h2>Breve Historia de Python </h2>
+								<p align="justify">La historia del lenguaje de programación Python se remonta hacia finales de los 80s principio de los 90s1 y su implementación comenzó en diciembre de 1992 cuando en Navidad <a href="">Guido Van Rossum</a> que trabajaba en el (CWI) (un centro de investigación holandés de carácter oficial que, entre otras cosas, actualmente alberga la oficina central del W3C) decidió empezar el proyecto como un pasatiempo dándole continuidad al lenguaje de programación ABC del que había formado parte del equipo de desarrollo en el CWI,3 dicho lenguaje se enfocaba en ser fácil de usar y aprender manteniendo potencia en su desempeño pero el hardware disponible en la época de su creación hacía difícil su uso y el proyecto no trascendió como se esperaba. Van Rossum es por tanto el autor principal de Python y continúa ejerciendo un rol central decidiendo la dirección del lenguaje, en la comunidad de Python se le conoce como Benevolente Dictador Vitalicio (en inglés: Benevolent Dictator for Life, BDFL). El nombre "Python" viene dado por la afición de Van Rossum al grupo Monty Python. </p>
+
+								</section>
+
+								<section>
+									<h2>Dimensión de Python</h2>
+									<ul>
+
+										<li>Educativo</li>
+										<li>Lúdico</li>
+										<li>Robótica</li>
+										<li>Empresarial</li>
+										<li>Web</li>
+										<li>Aereo Espacial</li>
+									</ul>
+								</section>
+
+				</section>
+
+				<section data-transition="convex">
+					<h2>Recorrido</h2>
+						<ul>
+						<li>Definición</li>
+						<li>Estructura y elementos del lenguaje </li>
+						<li>Usos</li>
+						<li>Comandos</li>
+						<li>Sentencias</li>
+						<li>Nuestro Primer Hola Mundo</li>
+						<li>Ejercicios</li>
+					</ul>
+				</section>
+
+
+													<section data-transition="convex">
+																<section data-transition="convex"  data-background-transition="zoom">
+																	<h2>Definición</h2>
+																	<blockquote cite="http://es.wikipedia.org/wiki/Python" align="justify">
+																	<p align="justify">	Python es un <a>lenguaje de programación interpretado</a> cuya filosofía hace hincapié en una sintaxis que favorezca un código legible. Se trata de un <a>lenguaje de programación multiparadigma</a>, ya que soporta <a>orientación a objetos, programación imperativa y, en menor medida, programación funcional.</a>
+																</p>	</blockquote>
+																</section>
+
+																<section data-transition="convex" data-background="#4d7e65" data-background-transition="zoom">
+																	<h2>Lenguaje de Programación Interpretado</h2>
+																	<blockquote class="blockquote-reverse">
+																	  El intérprete ejecuta el programa directamente, traduciendo cada sentencia en una secuencia de una o más subrutinas ya compiladas en código máquina. Los términos lenguaje interpretado y lenguaje compilado no están bien definidos porque, en teoría, cualquier lenguaje de programación puede ser interpretado o compilado.
+																	</blockquote>
+																</section>
+
+																<section data-transition="convex" data-background="#4d7e65" data-background-transition="zoom">
+																	<h2>Programación Orientado a Objetos</h2>
+																	<blockquote cite="http://">
+																		La POO es un paradigma surgido en los años 1970, que utiliza objetos como elementos fundamentales en la construcción de la solución. Un objeto es una abstracción de algún hecho o ente del mundo real, con atributos que representan sus características o propiedades, y métodos que emulan su comportamiento o actividad.
+																	</blockquote>
+																</section>
+
+																<section data-transition="convex" data-background="#4d7e65" data-background-transition="zoom">
+																	<h2>Programación imperativa</h2>
+																	La programación imperativa, en contraposición a la programación declarativa, es un paradigma de programación que describe la programación en términos del estado del programa y sentencias que cambian dicho estado.
+																</section>
+
+																<section data-transition="convex" data-background="#4d7e65" data-background-transition="zoom">
+																	<h2>Programación estructural</h2>
+																	<p>Es un paradigma de programación orientado a mejorar la claridad, calidad y tiempo de desarrollo de un programa de computadora, utilizando únicamente subrutinas y tres estructuras: secuencia, selección (if y switch) e iteración (bucles for y while), considerando innecesario y contraproducente el uso de la instrucción de transferencia incondicional (GOTO), que podría conducir a "código espagueti", que es mucho más difícil de seguir y de mantener, y era la causa de muchos errores de programación.</p>
+																</section>
+
+																<section data-transition="convex" data-background="#4d7e65" data-background-transition="zoom">
+																	<h2>¿Porqué python?</h2>
+																 <a>Tomado de http://www.python.org.ar/wiki/RendimientoPythonVsJavaVsNet</a>
+																 <ul>
+																 <li>Python es casi 3 veces mas compacto que Java, 6 veces mas que C. O sea, en C tenemos 6 lineas cuando en python 1 sola</li>
+																 <li>Python carga 6 veces mas rápido que Java cuando inicia </li>
+																 <li>Python consume 4 veces menos memoria que java </li>
+																 <li>Python tiene extensiones en C/C++ que son más rápidas que código nativo java, por mas que java tenga un compilador jit </li>
+																 </ul>
+
+																</section>
+
+
+																<section data-transition="convex" data-background="#4d7e65" data-background-transition="zoom">
+																		<h2>Comparaciones con Python</h2>
+																		<p>Imprimir en pantalla 'Hola Mundo' en C </p>
+
+																		<pre><code>
+	#include
+	int main(int argc, char *argv[]) {
+		printf("Hola Mundo");
+		return 0;
+	}
+
+																				</code></pre>
+																	</section>
+
+																	<section data-transition="convex" data-background="#4d7e65" data-background-transition="zoom">
+																		<h2>Comparaciones con Python</h2>
+																		<p>Imprimir en pantalla 'Hola Mundo' en C++</p>
+																				<pre><code>
+	#include
+	using namespace std;
+	int main(int argc, char *argv[]) {
+		std::cout << "Hola mundo" << endl;
+		return 0;
+	}
+
+																		</code></pre>
+
+																	</section>
+
+																	<section data-transition="convex"  data-background-transition="zoom">
+																				<h2>Ahora con Python, ¡bualaaa!</h2>
+
+																				<p>Imprimir en pantalla 'Hola Mundo' en PYTHON</p>
+																					<pre><code>
+	 	print 'Hola  Mundo'
+
+																					</code></pre>
+																					<h4>¡Fácil verdad!</h4>
+																	</section>
+
+															</section>
+
+						<section data-transition="convex">
+
+
+							<section>
+
+							<h2>Estructura y elementos del lenguaje</h2>
+									<ul>
+											<li>Variables</li>
+
+											<li>Tipos de datos</li>
+											<li>Operadores</li>
+											<li>Comentarios</li>
+											<li>Tipos de datos complejos</li>
+							</section>
+
+							<section data-transition="convex">
+								<h2>Variables</h2>
+								<p>
+									Una variable es un espacio para almacenar datos modificables, en la memoria de un ordenador. En Python, una variable se define con la sintaxis:
+
+<pre align="center"><code>
+	nombre_de_la_variable = valor_de_la_variable
+
+
+	Formas para declarar la varibles:
+	# Correcto
+	mi_variable = 12
+
+	# Incorrectos
+	MiVariable = 12
+	mivariable = 12
+	mi_variable=12
+
+
+
+</code></pre><br>
+
+Cada variable, tiene un nombre y un valor, el cual define a la vez, el tipo de datos de la variable.
+
+Existe un tipo de variable, denominada constante, la cual se utiliza para definir valores fijos, que no requieran ser modificados.
+								</p>
+
+
+							</section>
+
+							<section data-transition="convex">
+								<h2>Tipos de datos</h2>
+								<p>
+										Una variable (o constante) puede contener valores de diversos tipos. Entre ellos:
+<pre align="center"><code>
+	Cadena de texto (string):
+
+			mi_cadena = "Hola Mundo!"
+
+			mi_cadena_multilinea = """
+			Esta es una cadena
+			de varias lineas
+			"""
+
+	Número entero:
+
+			edad = 35
+
+	Número entero octal:
+
+			edad = 043
+
+	Número entero hexadecimal:
+
+			edad = 0x23
+
+	Número real:
+
+			precio = 7435.28
+
+	Booleano (verdadero / Falso):
+
+			verdadero = True
+			falso = False
+
+Existen además, otros tipos de datos más complejos,
+que veremos más adelante.
+
+
+</code></pre><br>
+
+</p>
+
+
+							</section>
+
+							<section data-transition="convex">
+								<h2>Operadores Aritméticos</h2>
+								<p>
+										Entre los operadores aritméticos que Python utiliza, podemos encontrar los siguientes:
+							<pre align="center"><code>
+Símbolo 	Significado 		Ejemplo 	Resultado
+
++ 		Suma 			a = 10 + 5 	a es 15
+- 		Resta 			a = 12 - 7 	a es 5
+- 		Negación 		a = -5 		a es -5
+* 		Multiplicación 		a = 7 * 5 	a es 35
+** 		Exponente 		a = 2 ** 3 	a es 8
+/ 		División 		a = 12.5 / 2 	a es 6.25
+// 		División entera 	a = 12.5 / 2 	a es 6.0
+% 		Módulo 			a = 27 % 4 	a es 3
+
+
+							</code></pre><br>
+
+							</p>
+
+
+							</section>
+
+
+							<section data-transition="convex">
+								<h2>Comentarios</h2>
+								<p>
+Los comentarios pueden ser de dos tipos: de una sola línea o multi-línea y se expresan de la siguiente manera:Entre los operadores aritméticos que Python utiliza, podemos encontrar los siguientes:
+							<pre align="center"><code>
+
+
+ # Esto es un comentario de una sola línea
+	mi_variable = 15
+
+ """Y este es un comentario
+	de varias líneas"""
+ mi_variable = 15
+
+ mi_variable = 15 # Este comentario es de una línea también
+
+ En los comentarios, pueden incluirse palabras que nos ayuden a identificar además, el subtipo de comentario:
+
+	# TODO esto es algo por hacer
+ # FIXME esto es algo que debe corregirse
+	# XXX esto también, es algo que debe corregirse
+
+
+
+							</code></pre><br>
+
+							</p>
+
+
+							</section>
+
+
+							<section data-transition="convex">
+								<h2>Tipos de Datos Complejos</h2>
+								<p>Python, posee además de los tipos ya vistos, 3 tipos más complejos, que admiten una colección de datos. Estos tipos son:</p>
+								 <ul><li>Tuplas</li>
+								 <li>Listas </li>
+								 <li>Diccionarios</li></ul>
+
+							</section>
+
+							<section>
+								<h2>Tuplas</h2>
+ 								<p>Una tupla es una variable que permite almacenar varios datos inmutables (no pueden ser modificados una vez creados) de tipos diferentes:</p>
+<pre><code>
+
+
+mi_tupla = ('cadena de texto', 15, 2.8, 'otro dato', 25)
+
+Se puede acceder a cada uno de los datos mediante
+su índice correspondiente,siendo 0 (cero), el índice
+del primer elemento:
+
+print mi_tupla[1] # Salida: 15
+
+
+
+
+</code></pre>
+							</section>
+
+						</section>
+
+
+<section>
+	<h1>Ejercicios</h1>
+	<p>Hagamos nuestros primeros ejercicios con python 2.7</p>
+</section>
+<section>
+	<h1>Acertijo</h1>
+	 #!/usr/bin/python2.7 <br>
+# -*- coding: utf-8 -*- <br>
+
+# Resolver 8+2= <a>16106</a>
+# 				 5+4= <a>2091</a>
+#          9+6= <a>54153</a> <br>
+#Pista: el valor del segundo miembro se genera por  la combinacion  de diferentes operadores en el primer miembro. <br>
+
+</section>
+<section>
+	<h1>Pista 1</h1>
+	<p>Combina los operadores en el primer miembro de la ecuación</p>
+</section>
+<section>
+	<h1>Pista 2</h1>
+	<p>Los operadores a utilizar son: +, - *.</p>
+</section>
+<section>
+	<h1>¡Muchas gracias!</h1>
+	<p>
+		Seguimos en la ruta de python.
+		<a href="">@lauyader</a>
+	</p>
+</section>
+</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

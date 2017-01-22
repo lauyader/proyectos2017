@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Html5</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-transition='zoom'>
+						<img src="img/html5/html5.png" alt="Logo de Html5" />
+					<h1>¿Qué es HTML5?</h1>
+					<h4>Electiva 1</h4>
+					<p>Facilitador: <a href=""> Luis Americo Auyadermont M</a>,<br> Twitter y Telegram: <a href="">@lauyader</a></p>
+
+
+
+
+
+				</section>
+
+				<section data-transition='convex'>
+					<h1>Plan de Evaluación</h1>
+
+
+					<ul>
+						<li>Conformar el equipo: <a href="">10%</a></li>
+						<li>Maqueta en  papel:   <a href="">15%</a></li>
+						<li>Integración Html:   <a href="">25%</a></li>
+						<li>Aplicación de CSS3: <a href="">25%</a></li>
+						<li>Proyecto final:   <a href="">25%</a></li>
+					</ul>
+
+				</section>
+				<section data-transition='zoom'>
+					<h1>Definición</h1>
+					<p>
+						HTML, <a href="">sigla en inglés de HyperText Markup Language (lenguaje de marcas de hipertexto)</a>, hace referencia al lenguaje de marcado para la elaboración de páginas web. Es un estándar que sirve de referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones, define una estructura básica y un código (denominado código HTML) para la definición de contenido de una página web, como texto, imágenes, videos, juegos, entre otros.
+					</p>
+				</section>
+
+				<section data-transition='zoom'>
+					<h2>Y Ahora, nos preguntamos...</h2>
+
+					<p>
+						¿Qué es HTML5?
+					</p>
+				</section>
+
+				<section data-transition='zoom'>
+				<p>HTML5 es la última versión de HTML. El término representa dos conceptos diferentes: Se trata de una nueva versión de HTML, con nuevos elementos, atributos y comportamientos. Contiene un conjunto más amplio de tecnologías que permite a los sitios Web y a las aplicaciones ser más diversas y de gran alcance.</p>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Estrucutura de una Página Web con HTML
+
+						Una página web realizada con HTML, tiene tres (3) componentes principales denominadas etiquetas o marcas
+						las cuales podemos mencionar: html, head y body
+
+						```
+
+						  ## Ejemplo de código html
+								<!DOCTYPE html>
+								<html lang="en">
+									  <head>
+											<title></title>
+
+
+									  </head>
+											  <body>
+														... Cuerpo de la página web
+											  </body>
+								</html>
+
+						```
+						<p>Todas las etiquetas o marcas se abren <a href="">```<nombre >``` </a><br> y se cierran <a href="">```</nombre>```</a></p>
+					</script>
+				</section>
+
+
+				<section data-transition='convex'>
+					<h1> Para que sirve el <a href="">head</a> </h1>
+						<p>Los elementos <HEAD></HEAD> se colocan inmediatamente después de la apertura de la marca <HTML> y cierran el encabezamiento propiamente dicho del documento; es decir toda la información que necesita el navegador, el servidor de web y los motores de búsqueda. Se trata del primer elemento que lee el navegador y, por ello, es el mejor lugar para insertar sintaxis script . </p>
+				</section>
+
+
+				<section data-transition='convex'>
+					<h1>Para que sirve el <a href="">body</a></h1>
+
+					<p>Aquí va el cuerpo de la página web, es decir en este espacio se coloca y se distribuye todo el contenido web.</p>
+
+
+				</section>
+
+				<section data-transition='convex'>
+					<h3>Hagamos nuestro <a href="">"hola mundo"</a></h3>
+					<img src="img/html5/coder.png" alt="¡A codear...!">
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
